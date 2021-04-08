@@ -59,7 +59,7 @@ export default class SlideshowTest extends Component {
     this.setState({
       interval: setInterval(() => {
         this.setState({
-          position: this.state.position === this.state.dataSource.length ? 0 : this.state.position + 1
+          position: this.state.position === this.state.dataSource.length - 1 ? 0 : this.state.position + 1
         });
       }, 2000)
     });
